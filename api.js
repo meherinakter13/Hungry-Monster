@@ -1,8 +1,13 @@
 document.getElementById("search-button").addEventListener("click", ()=>{
     const inputMeal=document.getElementById("meal").value;
+    if(inputMeal === ""){
+        alert("You didn't give any input");
+    }
+    else{
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${inputMeal}`)
     .then(res => res.json())
-    .then(data => displayMeal(data));  
+    .then(data => displayMeal(data)); 
+    } 
 });
 // for displaying meal List
 const displayMeal = data =>{
@@ -20,7 +25,7 @@ const displayMeal = data =>{
         }
         mealsDiv.innerHTML =mealNameValue;
     }
-
+// displaying ingredientDetails
 function ingredientDetails(mealName){
         fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealName}`)
         .then(res => res.json())
