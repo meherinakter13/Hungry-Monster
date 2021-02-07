@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input type="text" id="meal" class="form-control" placeholder="Search for meal...">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-success" id="search-button">Search</button>
+                </div>
+            </div>
+        </form>
+        <div id="ingredientContainer"></div>
+        <div id="mealsContainer"></div>
+        
+    </div>
+    
+  
+    <script src="api.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+#mealsContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 10px;
+    
+}
+#meals{
+   background-color: rgb(228, 216, 216);
+    margin: 5%;
+    text-align: center;
+}
+#meals img{
+    border: 3px;
+    width: 245px;
+}
+#meals h3{
+    font-size: 15px;
+}
+#image{
+    width: 300px;
+}
+#ingredientContainer{
+    text-align: center;
+}
